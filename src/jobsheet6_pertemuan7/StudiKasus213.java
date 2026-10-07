@@ -7,6 +7,7 @@ public class StudiKasus213 {
         String lomba ;
         String pesan;
         int jumlahDokumen, juara, dokumenKurang;
+        boolean pendanaanPkm=true;
 
         System.out.print("Nama Mahasiswa : ");
         nama = wika.nextLine();
@@ -32,7 +33,25 @@ public class StudiKasus213 {
                 
             }
         } else if (lomba.equalsIgnoreCase("PKM")) {
+            if (pendanaanPkm) {
+                System.out.print("Jumlah dokumen yang di upload : ");
+                jumlahDokumen = wika.nextInt();
+                if (jumlahDokumen==4) {
+                    pesan = "Dokumen Lengkap dan PKM lolos pendanaan. Dana penghargaan diberikan.";
+                } else {
+                    dokumenKurang = 4-jumlahDokumen;
+                    pesan = "Dokumen tidak lengkap, kurang " + dokumenKurang +". Dana penghargaan tidak diberikan.";
+                }
+                
+            } else {
+                pesan = "PKM tidak lolos pendanaan. Dana penghargaan tidak diberikan.";   
+            }
+        } else {
+            pesan = "Kegiatan diluar ketentuan, tidak mendapatkan Dana Penghargaan.";
+    
             
+        }{
+            System.out.println("Status : " + pesan);
 
             
         }
