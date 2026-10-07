@@ -19,7 +19,7 @@ public class TokoRoti13 {
     
     hargaTotalRoti= jumlahKotak*hargaRoti;
 
-    laba = hargaTotalRoti;
+    laba = hargaTotalRoti - modalTetap;
 
     gajiPegawai= (double) laba/jumlahPegawai;
 
