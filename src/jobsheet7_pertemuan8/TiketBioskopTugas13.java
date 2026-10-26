@@ -5,7 +5,7 @@ public class TiketBioskopTugas13 {
         Scanner wika = new Scanner (System.in);
         Scanner string = new Scanner (System.in);
         int jumlahTiket;
-        int tiket = 60000;
+        int tiket = 42000;
         String nama;
         int totalPenjualan=0, totalTiketTerjual=0;
         int hargaTotal, hargaFix, diskon;
