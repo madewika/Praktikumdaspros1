@@ -11,5 +11,8 @@ public class Tugas1Pemilihan13 {
 
     String pesan  = (uktLunas==true) ? "Pembayaran UKT terverifikasi \nSilakan cetak KRS dan minta tanda tangan DPA" : "Regristasi di tolak \nSilakan lunasi UKt terlebih dahulu";
     System.out.println(pesan);
+
     } 
+    
 }
+

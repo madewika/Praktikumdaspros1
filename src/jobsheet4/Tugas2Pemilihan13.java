@@ -12,6 +12,5 @@ public class Tugas2Pemilihan13 {
       }else{
         System.out.println("SKS valid");
       }
-
     }
 }
