@@ -2,12 +2,7 @@ package jobsheet9_pertemuan12;
 import java.util.Arrays;
 public class ArrayBilangan13 {
     public static void main(String[] args) {
-        int bil[] = new int [4];
-
-        bil[0]=13;
-        bil[1]=21;
-        bil[2]=-7;
-        bil[3]=33;
+        int bil[] = {5, 13, -7, 17};
 
         for (int i = 0; i < bil.length; i++) {
             System.out.println("bil [" + i + "] = " + bil[i]);
