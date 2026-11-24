@@ -11,13 +11,23 @@ public class ArrayNilai13 {
             nilaiAkhir[i] = wika.nextInt();
         }
 
-        System.out.println("Daftar mahasiswa yang lulus");
-        int no =1;
-        for (int nilai : nilaiAkhir) {
-            String status = (nilai > 70) ? "LULUS" : "TIDAK LULUS"; 
-            System.out.println("Mahasiswa ke-" + no + ": " + nilai+ " (" + status + ")"); 
-            no++;
-        }
+        int jmlLulus=0;
+        int jmlTidakLulus=0;
+
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (LULUS)");
+                jmlLulus++;
+            } else {
+                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (TIDAK LULUS)");
+                jmlTidakLulus++;
+        }   }
+
+        System.out.println("Jumlah mahasiswa lulus : " + jmlLulus);
+        System.out.println("Jumlah mahasiswa tidak lulus: " + jmlTidakLulus);
+    
+    
     }
+        
     
 }
