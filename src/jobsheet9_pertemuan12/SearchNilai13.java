@@ -1,7 +1,7 @@
 package jobsheet9_pertemuan12;
 public class SearchNilai13 {
     public static void main(String[] args) {
-       int nilai[] = {78, 65, 90, 55, 88, 72};
+       int nilai[] = {78, 65, 63, 55, 88, 72};
        int key = 90;
        boolean ditemukan = false;
 
